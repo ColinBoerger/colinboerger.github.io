@@ -5,4 +5,5 @@ import react from "@vitejs/plugin-react";
 //https://medium.com/@aishwaryaparab1/deploying-vite-deploying-vite-app-to-github-pages-166fff40ffd3
 export default defineConfig({
   plugins: [react()],
+  base: "/colinboerger.github.io",
 });
