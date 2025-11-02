@@ -1,13 +1,14 @@
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 //import reactLogo from "./assets/react.svg";
 //import viteLogo from "/vite.svg";
 //import * as https from "https";
 import "./App.css";
+import React from "react";
 
 function App() {
-  const [isPlaneOverHouse, setIsPlaneOverHouse] = useState<boolean>();
-  const [fortune, setFortune] = useState<string>();
-  useEffect(() => {
+  const [isPlaneOverHouse, setIsPlaneOverHouse] = React.useState<boolean>();
+  const [fortune, setFortune] = React.useState<string>();
+  React.useEffect(() => {
     fetch(
       "https://opensky-network.org/api/states/all?lamin=49.5244009&lomin=7.7013252&lamax=49.528359&lomax=7.732644"
     )
